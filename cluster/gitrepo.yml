@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: test-repo
+spec:
+  interval: 5m
+  url: https://github.com/dledanseur/testflux.git
+  ref:
+    branch: main
+
